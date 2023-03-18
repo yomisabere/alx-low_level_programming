@@ -3,23 +3,23 @@
 /**
  * main - prints the alphabet in lowercase,
  * followed by a new line, except q and e
- * Return: Aways 0 (Sucess)
- */
+ * Return: 0
+*/
 
 int main(void)
-{
-	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
+{
+	char c = 'a';
+
+	while (c <= 'z')
 	{
-		if (c != 'q' && c != 'e')
+		if (c != 'e' && c != 'q')
 		{
 			putchar(c);
 		}
-		{
-			putchar('\n');
-		}
-			return (0);
+		c++;
+	}
+	putchar('\n');
+	return (0);
 }
-
 
