@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - prints a randon number to a variable
+ * main - prints last digit of a randon number
  * Return: 0
  *
  */
@@ -19,7 +19,7 @@ int main(void)
 
 	if (lastd > 5)
 	{
-		printf("Last digit of %d and is greater than 5\n", n, lastd);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastd);
 	}
 	else if (lastd == 0)
 	{
